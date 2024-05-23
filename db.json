@@ -1,0 +1,404 @@
+{
+  "dishes": [
+    {
+      "id": 1,
+      "title": "Борщ",
+      "description": "Традиционный украинский суп с капустой и свеклой.",
+      "price": "15.99",
+      "image": "https://via.placeholder.com/150/92c952",
+      "category": "Супы"
+    },
+    {
+      "id": 2,
+      "title": "Куриный суп",
+      "description": "Легкий и питательный куриный суп.",
+      "price": "12.99",
+      "image": "https://via.placeholder.com/150/771796",
+      "category": "Супы"
+    },
+    {
+      "id": 3,
+      "title": "Грибной суп",
+      "description": "Ароматный суп с лесными грибами.",
+      "price": "14.50",
+      "image": "https://via.placeholder.com/150/24f355",
+      "category": "Супы"
+    },
+    {
+      "id": 4,
+      "title": "Томатный суп",
+      "description": "Освежающий суп из спелых томатов.",
+      "price": "10.99",
+      "image": "https://via.placeholder.com/150/d32776",
+      "category": "Супы"
+    },
+    {
+      "id": 5,
+      "title": "Луковый суп",
+      "description": "Французский луковый суп с сыром.",
+      "price": "13.99",
+      "image": "https://via.placeholder.com/150/f66b97",
+      "category": "Супы"
+    },
+    {
+      "id": 6,
+      "title": "Щи",
+      "description": "Русский суп с квашеной капустой и картофелем.",
+      "price": "11.99",
+      "image": "https://via.placeholder.com/150/34c759",
+      "category": "Супы"
+    },
+    {
+      "id": 7,
+      "title": "Минестроне",
+      "description": "Итальянский овощной суп с пастой.",
+      "price": "12.50",
+      "image": "https://via.placeholder.com/150/ff7f50",
+      "category": "Супы"
+    },
+    {
+      "id": 8,
+      "title": "Солянка",
+      "description": "Суп с копчеными колбасами, огурцами и маслинами.",
+      "price": "14.99",
+      "image": "https://via.placeholder.com/150/ffa07a",
+      "category": "Супы"
+    },
+    {
+      "id": 9,
+      "title": "Харчо",
+      "description": "Грузинский суп с говядиной и рисом.",
+      "price": "16.50",
+      "image": "https://via.placeholder.com/150/ff4500",
+      "category": "Супы"
+    },
+    {
+      "id": 10,
+      "title": "Уха",
+      "description": "Традиционный русский рыбный суп.",
+      "price": "13.50",
+      "image": "https://via.placeholder.com/150/87ceeb",
+      "category": "Супы"
+    },
+    {
+      "id": 11,
+      "title": "Мохито",
+      "description": "Освежающий коктейль с мятой и лаймом.",
+      "price": "8.99",
+      "image": "https://via.placeholder.com/150/56a8c2",
+      "category": "Напитки"
+    },
+    {
+      "id": 12,
+      "title": "Лимонад",
+      "description": "Домашний лимонад с лимоном и медом.",
+      "price": "6.50",
+      "image": "https://via.placeholder.com/150/92c952",
+      "category": "Напитки"
+    },
+    {
+      "id": 13,
+      "title": "Кофе",
+      "description": "Свежезаваренный ароматный кофе.",
+      "price": "3.99",
+      "image": "https://via.placeholder.com/150/771796",
+      "category": "Напитки"
+    },
+    {
+      "id": 14,
+      "title": "Чай",
+      "description": "Горячий чай с лимоном.",
+      "price": "2.99",
+      "image": "https://via.placeholder.com/150/24f355",
+      "category": "Напитки"
+    },
+    {
+      "id": 15,
+      "title": "Какао",
+      "description": "Горячий шоколад с маршмеллоу.",
+      "price": "4.50",
+      "image": "https://via.placeholder.com/150/d32776",
+      "category": "Напитки"
+    },
+    {
+      "id": 16,
+      "title": "Апельсиновый сок",
+      "description": "Свежевыжатый апельсиновый сок.",
+      "price": "5.99",
+      "image": "https://via.placeholder.com/150/ffcc00",
+      "category": "Напитки"
+    },
+    {
+      "id": 17,
+      "title": "Смузи",
+      "description": "Фруктовый смузи с клубникой и бананом.",
+      "price": "7.50",
+      "image": "https://via.placeholder.com/150/ff69b4",
+      "category": "Напитки"
+    },
+    {
+      "id": 18,
+      "title": "Квас",
+      "description": "Традиционный русский квас из ржаного хлеба.",
+      "price": "3.50",
+      "image": "https://via.placeholder.com/150/8b4513",
+      "category": "Напитки"
+    },
+    {
+      "id": 19,
+      "title": "Молочный коктейль",
+      "description": "Классический молочный коктейль с ванилью.",
+      "price": "6.99",
+      "image": "https://via.placeholder.com/150/ffffff",
+      "category": "Напитки"
+    },
+    {
+      "id": 20,
+      "title": "Фраппучино",
+      "description": "Охлажденный кофейный напиток с молоком и льдом.",
+      "price": "5.50",
+      "image": "https://via.placeholder.com/150/654321",
+      "category": "Напитки"
+    },
+    {
+      "id": 21,
+      "title": "Цезарь",
+      "description": "Салат с курицей, пармезаном и соусом цезарь.",
+      "price": "11.99",
+      "image": "https://via.placeholder.com/150/f66b97",
+      "category": "Салаты"
+    },
+    {
+      "id": 22,
+      "title": "Оливье",
+      "description": "Традиционный новогодний салат с колбасой.",
+      "price": "10.50",
+      "image": "https://via.placeholder.com/150/56a8c2",
+      "category": "Салаты"
+    },
+    {
+      "id": 23,
+      "title": "Греческий салат",
+      "description": "Салат с помидорами, огурцами и сыром фета.",
+      "price": "9.99",
+      "image": "https://via.placeholder.com/150/92c952",
+      "category": "Салаты"
+    },
+    {
+      "id": 24,
+      "title": "Капрезе",
+      "description": "Салат с томатами, моцареллой и базиликом.",
+      "price": "12.99",
+      "image": "https://via.placeholder.com/150/771796",
+      "category": "Салаты"
+    },
+    {
+      "id": 25,
+      "title": "Винегрет",
+      "description": "Салат с свеклой, картофелем и маринованными огурцами.",
+      "price": "8.99",
+      "image": "https://via.placeholder.com/150/24f355",
+      "category": "Салаты"
+    },
+    {
+      "id": 26,
+      "title": "Салат с тунцом",
+      "description": "Салат с тунцом, свежими овощами и оливковым маслом.",
+      "price": "14.50",
+      "image": "https://via.placeholder.com/150/abcdef",
+      "category": "Салаты"
+    },
+    {
+      "id": 27,
+      "title": "Салат с авокадо",
+      "description": "Легкий салат с авокадо, шпинатом и грейпфрутом.",
+      "price": "13.50",
+      "image": "https://via.placeholder.com/150/654321",
+      "category": "Салаты"
+    },
+    {
+      "id": 28,
+      "title": "Салат с креветками",
+      "description": "Салат с креветками, авокадо и руколой.",
+      "price": "15.99",
+      "image": "https://via.placeholder.com/150/ff7f50",
+      "category": "Салаты"
+    },
+    {
+      "id": 29,
+      "title": "Салат с курицей и ананасами",
+      "description": "Освежающий салат с курицей, ананасами и йогуртовым соусом.",
+      "price": "12.50",
+      "image": "https://via.placeholder.com/150/1e90ff",
+      "category": "Салаты"
+    },
+    {
+      "id": 30,
+      "title": "Фруктовый салат",
+      "description": "Ассорти из свежих фруктов с мятой и медом.",
+      "price": "10.99",
+      "image": "https://via.placeholder.com/150/ff69b4",
+      "category": "Салаты"
+    },
+    {
+      "id": 31,
+      "title": "Стейк рибай",
+      "description": "Сочный стейк рибай, приготовленный до совершенства.",
+      "price": "29.99",
+      "image": "https://via.placeholder.com/150/b22222",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 32,
+      "title": "Свиные ребрышки",
+      "description": "Свиные ребрышки в медово-горчичном соусе.",
+      "price": "24.99",
+      "image": "https://via.placeholder.com/150/8b0000",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 33,
+      "title": "Куриное филе",
+      "description": "Гриль-куриное филе с травами и специями.",
+      "price": "18.50",
+      "image": "https://via.placeholder.com/150/f08080",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 34,
+      "title": "Бефстроганов",
+      "description": "Традиционный русский бефстроганов с говядиной и грибами.",
+      "price": "22.99",
+      "image": "https://via.placeholder.com/150/a52a2a",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 35,
+      "title": "Котлеты по-киевски",
+      "description": "Куриные котлеты с маслом и зеленью внутри.",
+      "price": "19.99",
+      "image": "https://via.placeholder.com/150/d2691e",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 36,
+      "title": "Гуляш",
+      "description": "Венгерский гуляш с говядиной и овощами.",
+      "price": "20.99",
+      "image": "https://via.placeholder.com/150/ff6347",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 37,
+      "title": "Шашлык",
+      "description": "Маринованный шашлык из свинины на гриле.",
+      "price": "17.99",
+      "image": "https://via.placeholder.com/150/b22222",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 38,
+      "title": "Фрикадельки",
+      "description": "Шведские фрикадельки с картофельным пюре.",
+      "price": "16.50",
+      "image": "https://via.placeholder.com/150/8b0000",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 39,
+      "title": "Телятина в вине",
+      "description": "Телятина, тушенная в красном вине с овощами.",
+      "price": "25.50",
+      "image": "https://via.placeholder.com/150/f08080",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 40,
+      "title": "Утка по-пекински",
+      "description": "Традиционная утка по-пекински с хрустящей корочкой.",
+      "price": "30.99",
+      "image": "https://via.placeholder.com/150/a52a2a",
+      "category": "Мясные блюда"
+    },
+    {
+      "id": 41,
+      "title": "Тирамису",
+      "description": "Итальянский десерт из печенья с маскарпоне и кофе.",
+      "price": "12.99",
+      "image": "https://via.placeholder.com/150/ff69b4",
+      "category": "Десерты"
+    },
+    {
+      "id": 42,
+      "title": "Чизкейк",
+      "description": "Нежный чизкейк с фруктовой подливкой.",
+      "price": "10.99",
+      "image": "https://via.placeholder.com/150/4682b4",
+      "category": "Десерты"
+    },
+    {
+      "id": 43,
+      "title": "Шоколадный фондан",
+      "description": "Тающий внутри шоколадный кекс с жидким шоколадом.",
+      "price": "14.50",
+      "image": "https://via.placeholder.com/150/d2b48c",
+      "category": "Десерты"
+    },
+    {
+      "id": 44,
+      "title": "Панна котта",
+      "description": "Итальянский десерт из сладкого сливочного крема.",
+      "price": "11.99",
+      "image": "https://via.placeholder.com/150/ff7f50",
+      "category": "Десерты"
+    },
+    {
+      "id": 45,
+      "title": "Мороженое",
+      "description": "Разнообразные вкусы мороженого в вафельном стаканчике.",
+      "price": "8.99",
+      "image": "https://via.placeholder.com/150/ff69b4",
+      "category": "Десерты"
+    },
+    {
+      "id": 46,
+      "title": "Фруктовый салат",
+      "description": "Свежие фрукты с орехами и медом.",
+      "price": "9.99",
+      "image": "https://via.placeholder.com/150/4682b4",
+      "category": "Десерты"
+    },
+    {
+      "id": 47,
+      "title": "Эклеры",
+      "description": "Воздушные эклеры с кремом и шоколадной глазурью.",
+      "price": "7.99",
+      "image": "https://via.placeholder.com/150/d2b48c",
+      "category": "Десерты"
+    },
+    {
+      "id": 48,
+      "title": "Тарты",
+      "description": "Разнообразные фруктовые тарты с нежным кремом.",
+      "price": "10.50",
+      "image": "https://via.placeholder.com/150/ff7f50",
+      "category": "Десерты"
+    },
+    {
+      "id": 49,
+      "title": "Клубничный крем",
+      "description": "Легкий клубничный крем с кусочками свежей клубники.",
+      "price": "6.50",
+      "image": "https://via.placeholder.com/150/ff69b4",
+      "category": "Десерты"
+    },
+    {
+      "id": 50,
+      "title": "Фондан с карамелью",
+      "description": "Тающий внутри карамельный кекс с жидкой карамелью.",
+      "price": "13.99",
+      "image": "https://via.placeholder.com/150/4682b4",
+      "category": "Десерты"
+    }
+  ]
+}
