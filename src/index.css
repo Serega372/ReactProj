@@ -24,9 +24,11 @@ body {
 
 .dishes-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Сетка из 5 колонок */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .logo-container {

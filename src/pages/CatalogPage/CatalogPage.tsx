@@ -1,14 +1,14 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, {FC, useEffect, useMemo, useState} from 'react';
 import axios from 'axios';
 import { Dish } from '../../types/types';
-import DishCard from '../../components/dishCard/DishCard';
-import CartModal from '../../components/modal/CartModal';
-import SearchBar from "../../components/searchBar/SearchBar.tsx";
-import CategoryFilter from "../../components/categoryFilter/CategoryFilter.tsx";
+import DishCard from '../../components/DishCard/DishCard';
+import CartModal from '../../components/Modal/CartModal';
+import SearchBar from "../../components/SearchBar/SearchBar.tsx";
+import CategoryFilter from "../../components/CategoryFilter/CategoryFilter.tsx";
 
 const CatalogPage: FC = () => {
     const [dishes, setDishes] = useState<Dish[]>([]);
-    const [filteredDishes, setFilteredDishes] = useState<Dish[]>([]);
+    const [searchQuery, setSearchQuery] = useState<string>('');
     const [searchError, setSearchError] = useState<boolean>(false);
     const [selectedCategory, setSelectedCategory] = useState<string>('');
 
@@ -27,28 +27,34 @@ const CatalogPage: FC = () => {
     }, []);
 
     const handleSearch = (query: string) => {
-        const filteredBySearch = dishes.filter(dish =>
-            dish.title.toLowerCase().includes(query.toLowerCase())
-        );
-        const filteredByCategory = selectedCategory ? filteredBySearch
-            .filter(dish => dish.category === selectedCategory) : filteredBySearch;
-        if (filteredByCategory.length === 0 && query !== "") {
-            setSearchError(true);
-        } else {
-            setSearchError(false);
-            setFilteredDishes(filteredByCategory);
-        }
+        setSearchQuery(query);
     };
 
     const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        const category = event.target.value;
-        setSelectedCategory(category);
-        const filteredByCategory = category ? dishes.filter(dish =>
-            dish.category === category) : dishes;
-        setFilteredDishes(filteredByCategory);
+        setSelectedCategory(event.target.value);
     };
 
-    const categories = Array.from(new Set(dishes.map(dish => dish.category)));
+    const filteredDishes = useMemo(() => {
+        const filteredBySearch = dishes.filter(dish =>
+            dish.title.toLowerCase().includes(searchQuery.toLowerCase())
+        );
+
+        const filteredByCategory = selectedCategory ? filteredBySearch.filter(dish =>
+            dish.category === selectedCategory) : filteredBySearch;
+
+        if (filteredByCategory.length === 0 && searchQuery !== "") {
+            setSearchError(true);
+        } else {
+            setSearchError(false);
+        }
+
+        return filteredByCategory;
+    }, [dishes, searchQuery, selectedCategory]);
+
+    const categories = useMemo(() =>
+            Array.from(new Set(dishes.map(dish =>
+            dish.category))),
+            [dishes]);
 
     return (
         <div>
@@ -62,23 +68,18 @@ const CatalogPage: FC = () => {
                 </div>
             </nav>
             <div className="search-filter-container">
-            <SearchBar onSearch={handleSearch}/>
+                <SearchBar onSearch={handleSearch}/>
                 <CategoryFilter
                     categories={categories}
                     selectedCategory={selectedCategory}
                     onSelectCategory={handleCategoryChange}/>
             </div>
-            {searchError ? (
-                <p>Ничего не найдено!</p>
-            ) : (
+            {searchError && <p>Ничего не найдено!</p>}
             <div className="dishes-container">
-                {filteredDishes.length > 0 ? filteredDishes.map((dish) => (
-                    <DishCard key={dish.id} dish={dish}/>
-                )) : dishes.map((dish) => (
-                    <DishCard key={dish.id} dish={dish}/>
+                {filteredDishes.map(dish => (
+                    <DishCard key={dish.id} dish={dish} />
                 ))}
             </div>
-            )}
         </div>
     );
 };

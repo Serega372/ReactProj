@@ -1,8 +1,8 @@
 import {FC} from 'react';
 import {Routes, Route, Navigate} from 'react-router-dom';
-import CatalogPage from './pages/catalogPage/CatalogPage.tsx';
+import CatalogPage from './pages/CatalogPage/CatalogPage.tsx';
 import "./index.css"
-import CheckoutPage from './pages/checkoutPage/CheckoutPage.tsx';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage.tsx';
 
 const App: FC = () => {
     return (

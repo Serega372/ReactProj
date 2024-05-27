@@ -5,7 +5,7 @@
       "title": "Борщ",
       "description": "Традиционный украинский суп с капустой и свеклой.",
       "price": "15.99",
-      "image": "https://via.placeholder.com/150/92c952",
+      "image": "/src/assets/borsh.jpg",
       "category": "Супы"
     },
     {
@@ -85,7 +85,7 @@
       "title": "Мохито",
       "description": "Освежающий коктейль с мятой и лаймом.",
       "price": "8.99",
-      "image": "https://via.placeholder.com/150/56a8c2",
+      "image": "/src/assets/mohito.jpg",
       "category": "Напитки"
     },
     {
@@ -165,7 +165,7 @@
       "title": "Цезарь",
       "description": "Салат с курицей, пармезаном и соусом цезарь.",
       "price": "11.99",
-      "image": "https://via.placeholder.com/150/f66b97",
+      "image": "/src/assets/cisar.jpg",
       "category": "Салаты"
     },
     {
@@ -245,7 +245,7 @@
       "title": "Стейк рибай",
       "description": "Сочный стейк рибай, приготовленный до совершенства.",
       "price": "29.99",
-      "image": "https://via.placeholder.com/150/b22222",
+      "image": "/src/assets/ribay.jpg",
       "category": "Мясные блюда"
     },
     {
@@ -325,7 +325,7 @@
       "title": "Тирамису",
       "description": "Итальянский десерт из печенья с маскарпоне и кофе.",
       "price": "12.99",
-      "image": "https://via.placeholder.com/150/ff69b4",
+      "image": "/src/assets/tiramisu.jpg",
       "category": "Десерты"
     },
     {

@@ -1,6 +1,6 @@
 import { FC, useContext } from 'react';
 import { Dish } from '../../types/types.ts';
-import { CartContext } from '../context/CartContext.tsx';
+import { CartContext } from '../../contexts/CartContext.tsx';
 import styles from './DishCard.module.css';
 
 interface DishCardProps {
@@ -19,10 +19,12 @@ const DishCard: FC<DishCardProps> = ({ dish }) => {
     return (
         <div className={styles["dish-card"]}>
             <img src={dish.image} alt={dish.title} />
-            <h2>{dish.title}</h2>
-            <p>{dish.description}</p>
-            <p>Цена: ${dish.price}</p>
-            <button className={styles["add-button"]} onClick={() => addToCart({ ...dish, quantity: 1 })}>
+            <div className={styles["details-container"]}>
+                <h2 className={styles["title"]}>{dish.title}</h2>
+                <p className={styles["description"]}>{dish.description}</p>
+                <p className={styles["price"]}>Цена: ${dish.price}</p>
+            </div>
+            <button className={styles["add-button"]} onClick={() => addToCart({...dish, quantity: 1})}>
                 Добавить в корзину
             </button>
         </div>

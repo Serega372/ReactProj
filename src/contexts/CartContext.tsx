@@ -1,5 +1,5 @@
-import React, {createContext, useState, ReactNode, useContext, useEffect, Dispatch} from 'react';
-import { Dish } from '../../types/types.ts';
+import React, {createContext, useState, ReactNode, useEffect, Dispatch} from 'react';
+import { Dish } from '../types/types.ts';
 
 interface CartItem extends Dish {
     quantity: number;
@@ -58,12 +58,4 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
             {children}
         </CartContext.Provider>
     );
-};
-
-export const useCart = () => {
-    const context = useContext(CartContext);
-    if (!context) {
-        throw new Error('useCart must be used within a CartProvider');
-    }
-    return context;
 };
